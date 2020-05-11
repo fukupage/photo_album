@@ -10,3 +10,4 @@ imgフォルダも画像は入っていませんご自身で追加してくだ�
 
 # 動作サンプル
 https://bowworks.heteml.net/fukupage_github_io/photo_album/
+※JavaScriptのみの動作サンプルです。Jquery版やVue版でも、同様の動作をします。
