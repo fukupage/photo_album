@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo_Album</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <h1 class="text-center">Photo Album</h1>
+  </header>
+  <main>
+    <div class="container">
+      <div id="img_unit" class="row">
+        <div class="photo col-lg-4" v-for="image in images">
+          <img v-bind:src="image.path">
+          <div class="inner">
+            <p>{{ image.caption }}<span>{{ image.name }}</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="text-center">&copy; Rei Fukuda / BowWorks</footer>
+  <script src="js/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/main_v.js"></script>
+</body>
+
+</html>
